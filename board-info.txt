@@ -1,1 +1,1 @@
-require board=canoe|OP60FFL1|OP611FL1
+require board=canoe|OP64DDL1

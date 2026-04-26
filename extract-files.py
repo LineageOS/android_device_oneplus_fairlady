@@ -87,7 +87,7 @@ blob_fixups: blob_fixups_user_type = {
 }  # fmt: skip
 
 module = ExtractUtilsModule(
-    'infiniti',
+    'fairlady',
     'oneplus',
     blob_fixups=blob_fixups,
     lib_fixups=lib_fixups,

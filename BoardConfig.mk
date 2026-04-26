@@ -5,15 +5,15 @@
 #
 
 # Partitions
-BOARD_SUPER_PARTITION_SIZE := 17062428672
+BOARD_SUPER_PARTITION_SIZE := 18136170496
 
 # Include the common OEM chipset BoardConfig.
 include device/oneplus/sm8850-common/BoardConfigCommon.mk
 
-DEVICE_PATH := device/oneplus/infiniti
+DEVICE_PATH := device/oneplus/fairlady
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := OP60FFL1,OP611FL1
+TARGET_OTA_ASSERT_DEVICE := OP64DDL1
 
 # Display
 TARGET_SCREEN_DENSITY := 560
@@ -28,4 +28,4 @@ TARGET_RECOVERY_DENSITY := xxhdpi
 TARGET_RECOVERY_UI_MARGIN_HEIGHT := 103
 
 # Include the proprietary files BoardConfig.
-include vendor/oneplus/infiniti/BoardConfigVendor.mk
+include vendor/oneplus/fairlady/BoardConfigVendor.mk

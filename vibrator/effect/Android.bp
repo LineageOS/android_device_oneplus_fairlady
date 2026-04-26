@@ -1,5 +1,5 @@
 cc_library_shared {
-    name: "libqtivibratoreffect.oplus.infiniti",
+    name: "libqtivibratoreffect.oplus.fairlady",
     header_libs: [
         "libqtivibratoreffect_headers",
     ],
