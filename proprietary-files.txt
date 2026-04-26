@@ -1,10 +1,12 @@
 ## All proprietary files from this list, unless pinned and noted otherwise,
-## are from OnePlus 15 (CPH2745_16.0.10.500(EX01)).
+## are from OnePlus 15T (PLZ110_16.0.10.500(CN01)).
 
 # ACDB
 odm/etc/acdbdata/FTM/acdb_cal.acdb
+odm/etc/acdbdata/MOS/acdb_cal.acdb
 odm/etc/acdbdata/Audio_Parameter_Version.txt
 odm/etc/acdbdata/acdb_cal.acdb:vendor/etc/acdbdata/canoe_mtp/acdb_cal.acdb
+odm/etc/acdbdata/dw_ve_enpuv6.eai
 odm/etc/acdbdata/up_ve_enpuv6_ha.eai
 odm/etc/acdbdata/up_ve_enpuv6_hh.eai
 
@@ -19,8 +21,8 @@ odm/lib/rfsa/adsp/libarc_htp_driver_skel.so
 odm/lib/rfsa/adsp/libhvxFaceBeautyPre_skel.so
 odm/lib/rfsa/adsp/libktveffect.so
 odm/lib/rfsa/adsp/libosieubwc_skel.so
-odm/lib/rfsa/adsp/libtfadsp_sb5_5_rx.so
-odm/lib/rfsa/adsp/libtfadsp_sb5_5_tx.so
+odm/lib/rfsa/adsp/libtfadsp_sb7_0_rx.so
+odm/lib/rfsa/adsp/libtfadsp_sb7_0_tx.so
 odm/lib/rfsa/adsp/nlc_bgth_v1_5.so
 
 # ANT+ firmware
@@ -54,6 +56,7 @@ odm/etc/resourcemanager.xml
 odm/etc/usecaseKvManager.xml
 
 # Audio firmware
+odm/firmware/tfa9865.cnt
 odm/firmware/tfa98xx.cnt
 
 # Audio params
@@ -87,6 +90,7 @@ odm/etc/audio/oprec_audrec_params/oprec_record_calibration.bin
 odm/bin/hw/vendor.oplus.hardware.cammidasservice-V1-service
 odm/etc/camera/AIAE_Models/AIAEVideoModelMain.bin
 odm/etc/camera/AIAE_Models/AIAEVideoModelTele.bin
+odm/etc/camera/AIAE_Models/AIAEVideoModelTeleDownSample.bin
 odm/etc/camera/AIAE_Models/AIAEVideoModelWide.bin
 odm/etc/camera/Owl_Algo_model/Owl_Algo_F_FHD.bin
 odm/etc/camera/Owl_Algo_model/Owl_Algo_F_UHD.bin
@@ -94,8 +98,6 @@ odm/etc/camera/Owl_Algo_model/Owl_Algo_M_FHD.bin
 odm/etc/camera/Owl_Algo_model/Owl_Algo_M_UHD.bin
 odm/etc/camera/Owl_Algo_model/Owl_Algo_T_FHD.bin
 odm/etc/camera/Owl_Algo_model/Owl_Algo_T_UHD.bin
-odm/etc/camera/Owl_Algo_model/Owl_Algo_W_FHD.bin
-odm/etc/camera/Owl_Algo_model/Owl_Algo_W_UHD.bin
 odm/etc/camera/aigc/aigc_models/blurDet_sm8850.bin
 odm/etc/camera/aigc/aigc_models/faceSeg_sm8850.bin
 odm/etc/camera/aigc/aigc_models/gfpgan1024_sm8850.bin
@@ -218,16 +220,16 @@ odm/etc/camera/basictone/vig/VigTab_Tele
 odm/etc/camera/basictone/vig/VigTab_UTele
 odm/etc/camera/basictone/vig/VigTab_Wide
 odm/etc/camera/cfr_bin/CFR_OPlus_EF017_UW_snapshot.bin
-odm/etc/camera/cfr_bin/CFR_infinitimain.bin
-odm/etc/camera/cfr_bin/CFR_infinititele.bin
-odm/etc/camera/cfr_bin/CFR_infinitiultrawide.bin
+odm/etc/camera/cfr_bin/CFR_fairladyExmain.bin
+odm/etc/camera/cfr_bin/CFR_fairladyExtele.bin
+odm/etc/camera/cfr_bin/CFR_fairladymain.bin
+odm/etc/camera/cfr_bin/CFR_fairladytele.bin
 odm/etc/camera/config/camera_third_party_feature_config.protobuf
 odm/etc/camera/config/camera_unit_config
 odm/etc/camera/config/camera_unit_feature_config.protobuf
-odm/etc/camera/config/infinitifront
-odm/etc/camera/config/infinitimain
-odm/etc/camera/config/infinititele
-odm/etc/camera/config/infinitiultrawide
+odm/etc/camera/config/fairladyfront
+odm/etc/camera/config/fairladymain
+odm/etc/camera/config/fairladytele
 odm/etc/camera/config/oplus_camera_algo_switch_config
 odm/etc/camera/config/oplus_camera_algo_traversal_config.json
 odm/etc/camera/config/oplus_camera_aps_config
@@ -237,21 +239,16 @@ odm/etc/camera/config/oplus_preview_decision_params.json
 odm/etc/camera/config/quick_visibility_white_list
 odm/etc/camera/config/video_ai_proc_cfg.json
 odm/etc/camera/config/video_beauty_default_config
-odm/etc/camera/dng/ColorMatrix1_infinitimain.txt
-odm/etc/camera/dng/ColorMatrix1_infinititele.txt
-odm/etc/camera/dng/ColorMatrix1_infinitiultrawide.txt
-odm/etc/camera/dng/ColorMatrix2_infinitimain.txt
-odm/etc/camera/dng/ColorMatrix2_infinititele.txt
-odm/etc/camera/dng/ColorMatrix2_infinitiultrawide.txt
-odm/etc/camera/dng/D28HUESATMap_infinitimain.txt
-odm/etc/camera/dng/D28HUESATMap_infinititele.txt
-odm/etc/camera/dng/D28HUESATMap_infinitiultrawide.txt
-odm/etc/camera/dng/D65HUESATMap_infinitimain.txt
-odm/etc/camera/dng/D65HUESATMap_infinititele.txt
-odm/etc/camera/dng/D65HUESATMap_infinitiultrawide.txt
-odm/etc/camera/dng/ToneCurve_infinitimain.txt
-odm/etc/camera/dng/ToneCurve_infinititele.txt
-odm/etc/camera/dng/ToneCurve_infinitiultrawide.txt
+odm/etc/camera/dng/ColorMatrix1_fairladymain.txt
+odm/etc/camera/dng/ColorMatrix1_fairladytele.txt
+odm/etc/camera/dng/ColorMatrix2_fairladymain.txt
+odm/etc/camera/dng/ColorMatrix2_fairladytele.txt
+odm/etc/camera/dng/D28HUESATMap_fairladymain.txt
+odm/etc/camera/dng/D28HUESATMap_fairladytele.txt
+odm/etc/camera/dng/D65HUESATMap_fairladymain.txt
+odm/etc/camera/dng/D65HUESATMap_fairladytele.txt
+odm/etc/camera/dng/ToneCurve_fairladymain.txt
+odm/etc/camera/dng/ToneCurve_fairladytele.txt
 odm/etc/camera/facerestore/fr_models/BDET.bin
 odm/etc/camera/facerestore/fr_models/DB.bin
 odm/etc/camera/facerestore/fr_models/FS.bin
@@ -538,7 +535,6 @@ odm/etc/camera/filters_lut/oplus_video_filter_solar
 odm/etc/camera/filters_lut/oplus_video_filter_strong
 odm/etc/camera/filters_lut/oplus_video_filter_west
 odm/etc/camera/filters_lut/p3_srgb_to_bt2020_hlg_3dlut_light.cube
-odm/etc/camera/filters_lut/p3_to_bt2020_3dlut.bin
 odm/etc/camera/filters_lut/p3_to_bt2020_3dlut.cube
 odm/etc/camera/filters_lut/p3_to_bt2020_3dlut_light.cube
 odm/etc/camera/filters_lut/p4_1.cube.rgb.bin
@@ -773,7 +769,9 @@ odm/etc/camera/AiFace.json
 odm/etc/camera/BodySeg.json
 odm/etc/camera/CameraHWConfiguration.config
 odm/etc/camera/DitherTabU8
-odm/etc/camera/OplusOfflineReprocess.json
+odm/etc/camera/OplusMultiDefault.xml
+odm/etc/camera/OplusSATPortrait.xml
+odm/etc/camera/OplusSingleDefault.xml
 odm/etc/camera/Vega_Align_occlusion.model
 odm/etc/camera/Vega_Align_occlusion_snap.model
 odm/etc/camera/Vega_Attribute_Face_RGB.model
@@ -804,7 +802,6 @@ odm/etc/camera/fb_default
 odm/etc/camera/fb_original
 odm/etc/camera/fwk_config.json
 odm/etc/camera/gamma_masterMode_quick_hdr_conf.json
-odm/etc/camera/gamma_masterMode_quick_sdr_conf.json
 odm/etc/camera/gamma_photo_hdr_conf.json
 odm/etc/camera/gamma_photo_sdr_conf.json
 odm/etc/camera/gamma_preview_hdr_conf.json
@@ -866,33 +863,26 @@ odm/lib64/camera/components/libcamxoemsatsoftwarefusionwrapper.so
 odm/lib64/camera/components/libcamxoemsatwrapper.so
 odm/lib64/camera/AIAWB_q.odnn
 odm/lib64/camera/awb_parameter_default.bin
-odm/lib64/camera/awb_parameter_infinitifront.bin
-odm/lib64/camera/awb_parameter_infinitimain.bin
-odm/lib64/camera/awb_parameter_infinititele.bin
-odm/lib64/camera/awb_parameter_infinitiultrawide.bin
-odm/lib64/camera/com.qti.sensor.infinitifront.so
-odm/lib64/camera/com.qti.sensor.infinitimain.so
-odm/lib64/camera/com.qti.sensor.infinititele.so
-odm/lib64/camera/com.qti.sensor.infinitiultrawide.so
-odm/lib64/camera/com.qti.sensormodule.infinitifront.bin
-odm/lib64/camera/com.qti.sensormodule.infinitimain.bin
-odm/lib64/camera/com.qti.sensormodule.infinititele.bin
-odm/lib64/camera/com.qti.sensormodule.infinititele2.bin
-odm/lib64/camera/com.qti.sensormodule.infinitiultrawide.bin
+odm/lib64/camera/awb_parameter_fairladyfront.bin
+odm/lib64/camera/awb_parameter_fairladymain.bin
+odm/lib64/camera/awb_parameter_fairladytele.bin
+odm/lib64/camera/com.qti.sensor.fairladyfront.so
+odm/lib64/camera/com.qti.sensor.fairladymain.so
+odm/lib64/camera/com.qti.sensor.fairladytele.so
+odm/lib64/camera/com.qti.sensormodule.fairladyfront.bin
+odm/lib64/camera/com.qti.sensormodule.fairladymain.bin
+odm/lib64/camera/com.qti.sensormodule.fairladytele.bin
+odm/lib64/camera/com.qti.sensorsocmap.socid_map.bin
 odm/lib64/camera/com.qti.tuned.default.canoe.bin
-odm/lib64/camera/com.qti.tuned.inffront.bin
-odm/lib64/camera/com.qti.tuned.infmain.bin
-odm/lib64/camera/com.qti.tuned.inftele.bin
-odm/lib64/camera/com.qti.tuned.infultrawide.bin
+odm/lib64/camera/com.qti.tuned.fairladyfront.bin
+odm/lib64/camera/com.qti.tuned.fairladymain.bin
+odm/lib64/camera/com.qti.tuned.fairladytele.bin
 odm/lib64/camera/libaecCustomParam_Cam0.bin
 odm/lib64/camera/libaecCustomParam_Cam1.bin
 odm/lib64/camera/libaecCustomParam_Cam2.bin
 odm/lib64/camera/libaecCustomParam_Cam3.bin
 odm/lib64/camera/libafCustomParam_Cam0.bin
-odm/lib64/camera/libafCustomParam_Cam1.bin
 odm/lib64/camera/libafCustomParam_Cam2.bin
-odm/lib64/camera/libafCustomParam_Cam3.bin
-odm/lib64/camera/libafCustomParam_Cam4.bin
 odm/lib64/camera/libpdCustomParam_Cam0.bin
 odm/lib64/camera/libpdCustomParam_Cam1.bin
 odm/lib64/camera/libpdCustomParam_Cam2.bin
@@ -972,7 +962,6 @@ odm/lib64/camera.oemlayer.healthmonitor.so
 odm/lib64/camera.oemlayer.logger.so
 odm/lib64/camera.oemlayer.uilayer.so
 odm/lib64/com.oplus.mcx.linearmapper.so
-odm/lib64/com.oplus.node.preview.v2.so
 odm/lib64/lib2DSlender.so
 odm/lib64/libAECParamParser.so
 odm/lib64/libAF.so
@@ -985,6 +974,7 @@ odm/lib64/libAncSegBaseSdk.so
 odm/lib64/libAncSegmentSdk.so
 odm/lib64/libBasicTonePhoto.so
 odm/lib64/libBokehPre.so
+odm/lib64/libCNamaSDK_vendor.so
 odm/lib64/libCS.so
 odm/lib64/libCaptureBokeh.so
 odm/lib64/libDarkColor.so
@@ -1000,6 +990,7 @@ odm/lib64/libHIS.so
 odm/lib64/libImageWarpMask.so;FIX_SONAME
 odm/lib64/libImplicitWatermark.so
 odm/lib64/libMNN.so
+odm/lib64/libNamaWrapper.so
 odm/lib64/libODNN.so
 odm/lib64/libOPAlgoCamAIBeautyBodyDetection.so
 odm/lib64/libOPAlgoCamAiBeautyFaceRetouchCn.so
@@ -1056,6 +1047,7 @@ odm/lib64/libarcsoft_preview_antibanding.so
 odm/lib64/libarcsoft_qnnhtp.so
 odm/lib64/libarcsoft_scbokeh_video.so
 odm/lib64/libarcsoft_smart_denoise.so
+odm/lib64/libarcsoft_tf_DetailMagic.so
 odm/lib64/libarcsoft_tfm.so
 odm/lib64/libarcsoft_turbo_fusion_raw_portrait_super_night.so
 odm/lib64/libarcsoft_turbo_fusion_raw_super_night.so
@@ -1066,7 +1058,6 @@ odm/lib64/libarcsoft_turbo_raw.so
 odm/lib64/libarcsoft_videoautozoom.so;FIX_SONAME
 odm/lib64/libc++_shared.so
 odm/lib64/libcam.odnn.interface.so
-odm/lib64/libcam.oplus.3a.v3.so
 odm/lib64/libcam.oplus.3a.v4.so
 odm/lib64/libcreateFDCLitecachebin.so
 odm/lib64/libcreateFDCcachebin.so
@@ -1080,6 +1071,7 @@ odm/lib64/libexif-jpeg-aps.so
 odm/lib64/libextendfile.so
 odm/lib64/libextensionlayer.so
 odm/lib64/libfovctrl.so
+odm/lib64/libfuai_vendor.so
 odm/lib64/libfusioninterpolation.arcsoft.so
 odm/lib64/libhcsfwk.so
 odm/lib64/libhcsutils.so
@@ -1232,6 +1224,8 @@ vendor/lib64/camera/camxfl300v1indices.bin
 vendor/lib64/camera/camxfl300v2indices.bin
 vendor/lib64/camera/camxflcustom300indices.bin
 vendor/lib64/camera/chifdnodeconfig.bin
+vendor/lib64/camera/com.qti.chi.featurecompatibilityspecification.netrani.bin
+vendor/lib64/camera/com.qti.chi.featurecompatibilityspecification.skyros.bin
 vendor/lib64/camera/com.qti.chi.featurecompatibilityspecification.sm7750.bin
 vendor/lib64/camera/com.qti.chi.featurecompatibilityspecification.sm8750.bin
 vendor/lib64/camera/com.qti.chi.featurecompatibilityspecification.sm8850.bin
@@ -1282,12 +1276,22 @@ vendor/lib64/camera/com.qti.sensormodule.qtech_imx766_lpai_ois.bin
 vendor/lib64/camera/com.qti.sensormodule.qtech_imx766_ois.bin
 vendor/lib64/camera/com.qti.sensormodule.qtech_imx858.bin
 vendor/lib64/camera/com.qti.sensormodule.qtech_s5kjn5.bin
+vendor/lib64/camera/com.qti.sensormodule.qtech_s5kjn5_sm8845.bin
 vendor/lib64/camera/com.qti.sensormodule.qti_tpg0.bin
 vendor/lib64/camera/com.qti.sensormodule.qti_tpg1.bin
 vendor/lib64/camera/com.qti.sensormodule.qti_tpg2.bin
 vendor/lib64/camera/com.qti.sensormodule.shinetech_ov32c4c.bin
 vendor/lib64/camera/com.qti.sensormodule.sony_imx888.bin
+vendor/lib64/camera/com.qti.sensorsocmap.socid_map.bin
 vendor/lib64/camera/com.qti.tuned.default.canoe.bin
+vendor/lib64/camera/com.qti.tuned.molokai_default.bin
+vendor/lib64/camera/com.qti.tuned.molokai_qtech_imx766.bin
+vendor/lib64/camera/com.qti.tuned.molokai_qtech_imx858.bin
+vendor/lib64/camera/com.qti.tuned.molokai_qtech_s5kjn5.bin
+vendor/lib64/camera/com.qti.tuned.molokai_shinetech_ov32c.bin
+vendor/lib64/camera/com.qti.tuned.molokai_sony_imx888.bin
+vendor/lib64/camera/com.qti.tuned.molokai_tpg.bin
+vendor/lib64/camera/com.qti.tuned.molokai_tpg2.bin
 vendor/lib64/camera/com.qti.tuned.qtech_imx766.canoe.bin
 vendor/lib64/camera/com.qti.tuned.qtech_imx858.canoe.bin
 vendor/lib64/camera/com.qti.tuned.qtech_s5kjn5.canoe.bin
@@ -1296,6 +1300,8 @@ vendor/lib64/camera/com.qti.tuned.sony_imx888.canoe.bin
 vendor/lib64/camera/com.qti.tuned.tpg.art.bin
 vendor/lib64/camera/com.qti.tuned.tpg.canoe.bin
 vendor/lib64/camera/com.qti.tuned.tpg2.canoe.bin
+vendor/lib64/camera/fairladyExfront_3.pb
+vendor/lib64/camera/fairladyfront_3.pb
 vendor/lib64/camera/fdconfigoffline.bin
 vendor/lib64/camera/fdconfigpreview.bin
 vendor/lib64/camera/fdconfigpreviewlite.bin
@@ -1304,7 +1310,14 @@ vendor/lib64/camera/fdconfigvideo.bin
 vendor/lib64/camera/fdconfigvideolite.bin
 vendor/lib64/camera/infinitifront_4.pb
 vendor/lib64/camera/lafafront_4.pb
+vendor/lib64/camera/lighthousefront_1.pb
+vendor/lib64/camera/macanExFront_4.pb
+vendor/lib64/camera/macanFront_4.pb
 vendor/lib64/camera/qfdserviceconfig.bin
+vendor/lib64/camera/swangoosefrontmain_3.pb
+vendor/lib64/camera/swangoosefrontsub_4.pb
+vendor/lib64/camera/u9bfront_4.pb
+vendor/lib64/camera/u9front_4.pb
 vendor/lib64/hw/camera.qcom.core.so
 vendor/lib64/hw/camera.qcom.sm8850.so
 vendor/lib64/hw/camera.qcom.so
@@ -1507,8 +1520,7 @@ vendor/firmware/CAMERA_ICP_1.mdt
 vendor/firmware/CAMERA_ICP_170.elf
 
 # Charger firmware
-odm/firmware/fastchg/24831/charging_hyper_mode_config.txt
-odm/firmware/fastchg/24863/charging_hyper_mode_config.txt
+odm/firmware/fastchg/25821/charging_hyper_mode_config.txt
 odm/firmware/fastchg/batt_dchg_ctrl_config_table.txt
 odm/firmware/fastchg/batt_eis_config.txt
 odm/firmware/fastchg/batt_si_loss_config_table.txt
@@ -1517,106 +1529,54 @@ odm/firmware/fastchg/charging_thermal_config_default.txt
 odm/firmware/fastchg/smart_chg_config_table.txt
 
 # Display configurations
-my_product/vendor/etc/display_apollo_list_AA601_P_7_A0020_dsc_cmd_mode_panel.xml:vendor/etc/display_apollo_list_AA601_P_7_A0020_dsc_cmd_mode_panel.xml
-my_product/vendor/etc/display_apollo_list_AD296_P_3_A0020_dsc_cmd_mode_panel.xml:vendor/etc/display_apollo_list_AD296_P_3_A0020_dsc_cmd_mode_panel.xml
-odm/etc/PanelChaplin/3D-Lut_Center_P3.txt
-odm/etc/PanelChaplin/3D-Lut_Center_sRGB.txt
-odm/etc/PanelChaplin/3D-Lut_Enhance_P3.txt
-odm/etc/PanelChaplin/3D-Lut_Enhance_sRGB.txt
-odm/etc/PanelChaplin/3D-Lut_LTM_P3.txt
-odm/etc/PanelChaplin/3D-Lut_LTM_sRGB.txt
-odm/etc/PanelChaplin/3D-Lut_Stand_P3.txt
-odm/etc/PanelChaplin/3D-Lut_Stand_sRGB.txt
-odm/etc/PanelChaplin/3D-Lut_StandardMode_P3.txt
-odm/etc/PanelChaplin/3D-Lut_StandardMode_sRGB.txt
-odm/etc/PanelChaplin/AA601_P_7_A0020_dsc_cmd_mode_panel_1_100nit.odf
-odm/etc/PanelChaplin/AA601_P_7_A0020_dsc_cmd_mode_panel_1_2nit.odf
-odm/etc/PanelChaplin/AA601_P_7_A0020_dsc_cmd_mode_panel_1_max.odf
-odm/etc/PanelChaplin/AA601_P_7_A0020_dsc_cmd_mode_panel_2_100nit.odf
-odm/etc/PanelChaplin/AA601_P_7_A0020_dsc_cmd_mode_panel_2_2nit.odf
-odm/etc/PanelChaplin/AA601_P_7_A0020_dsc_cmd_mode_panel_2_max.odf
-odm/etc/PanelChaplin/AA601_P_7_A0020_dsc_cmd_mode_panel_Cinema_100nits_pGC.txt
-odm/etc/PanelChaplin/AA601_P_7_A0020_dsc_cmd_mode_panel_Cinema_2nits_pGC.txt
-odm/etc/PanelChaplin/AA601_P_7_A0020_dsc_cmd_mode_panel_Cinema_pGC.txt
-odm/etc/PanelChaplin/AA601_P_7_A0020_dsc_cmd_mode_panel_EP3_100nits_pGC.txt
-odm/etc/PanelChaplin/AA601_P_7_A0020_dsc_cmd_mode_panel_EP3_2nits_pGC.txt
-odm/etc/PanelChaplin/AA601_P_7_A0020_dsc_cmd_mode_panel_EP3_pGC.txt
-odm/etc/PanelChaplin/AA601_P_7_A0020_dsc_cmd_mode_panel_EsRGB_100nits_pGC.txt
-odm/etc/PanelChaplin/AA601_P_7_A0020_dsc_cmd_mode_panel_EsRGB_2nits_pGC.txt
-odm/etc/PanelChaplin/AA601_P_7_A0020_dsc_cmd_mode_panel_EsRGB_pGC.txt
-odm/etc/PanelChaplin/AA601_P_7_A0020_dsc_cmd_mode_panel_HS
-odm/etc/PanelChaplin/AA601_P_7_A0020_dsc_cmd_mode_panel_LsRGB_100nits_pGC.txt
-odm/etc/PanelChaplin/AA601_P_7_A0020_dsc_cmd_mode_panel_LsRGB_2nits_pGC.txt
-odm/etc/PanelChaplin/AA601_P_7_A0020_dsc_cmd_mode_panel_LsRGB_pGC.txt
-odm/etc/PanelChaplin/AA601_P_7_A0020_dsc_cmd_mode_panel_Nature_100nits_pGC.txt
-odm/etc/PanelChaplin/AA601_P_7_A0020_dsc_cmd_mode_panel_Nature_2nits_pGC.txt
-odm/etc/PanelChaplin/AA601_P_7_A0020_dsc_cmd_mode_panel_Nature_pGC.txt
-odm/etc/PanelChaplin/AA601_P_7_A0020_dsc_cmd_mode_panel_Vivid_100nits_pGC.txt
-odm/etc/PanelChaplin/AA601_P_7_A0020_dsc_cmd_mode_panel_Vivid_2nits_pGC.txt
-odm/etc/PanelChaplin/AA601_P_7_A0020_dsc_cmd_mode_panel_Vivid_pGC.txt
-odm/etc/PanelChaplin/AA601_P_7_A0020_dsc_cmd_mode_panel_game_color_enhance_Cinema_100nits_pGC.txt
-odm/etc/PanelChaplin/AA601_P_7_A0020_dsc_cmd_mode_panel_game_color_enhance_Cinema_2nits_pGC.txt
-odm/etc/PanelChaplin/AA601_P_7_A0020_dsc_cmd_mode_panel_game_color_enhance_Cinema_pGC.txt
-odm/etc/PanelChaplin/AA601_P_7_A0020_dsc_cmd_mode_panel_game_color_enhance_EP3_100nits_pGC.txt
-odm/etc/PanelChaplin/AA601_P_7_A0020_dsc_cmd_mode_panel_game_color_enhance_EP3_2nits_pGC.txt
-odm/etc/PanelChaplin/AA601_P_7_A0020_dsc_cmd_mode_panel_game_color_enhance_EP3_pGC.txt
-odm/etc/PanelChaplin/AA601_P_7_A0020_dsc_cmd_mode_panel_game_color_enhance_EsRGB_100nits_pGC.txt
-odm/etc/PanelChaplin/AA601_P_7_A0020_dsc_cmd_mode_panel_game_color_enhance_EsRGB_2nits_pGC.txt
-odm/etc/PanelChaplin/AA601_P_7_A0020_dsc_cmd_mode_panel_game_color_enhance_EsRGB_pGC.txt
-odm/etc/PanelChaplin/AA601_P_7_A0020_dsc_cmd_mode_panel_game_color_enhance_HS
-odm/etc/PanelChaplin/AA601_P_7_A0020_dsc_cmd_mode_panel_game_color_enhance_LsRGB_100nits_pGC.txt
-odm/etc/PanelChaplin/AA601_P_7_A0020_dsc_cmd_mode_panel_game_color_enhance_LsRGB_2nits_pGC.txt
-odm/etc/PanelChaplin/AA601_P_7_A0020_dsc_cmd_mode_panel_game_color_enhance_LsRGB_pGC.txt
-odm/etc/PanelChaplin/AA601_P_7_A0020_dsc_cmd_mode_panel_game_color_enhance_Nature_100nits_pGC.txt
-odm/etc/PanelChaplin/AA601_P_7_A0020_dsc_cmd_mode_panel_game_color_enhance_Nature_2nits_pGC.txt
-odm/etc/PanelChaplin/AA601_P_7_A0020_dsc_cmd_mode_panel_game_color_enhance_Nature_pGC.txt
-odm/etc/PanelChaplin/AA601_P_7_A0020_dsc_cmd_mode_panel_game_color_enhance_Vivid_100nits_pGC.txt
-odm/etc/PanelChaplin/AA601_P_7_A0020_dsc_cmd_mode_panel_game_color_enhance_Vivid_2nits_pGC.txt
-odm/etc/PanelChaplin/AA601_P_7_A0020_dsc_cmd_mode_panel_game_color_enhance_Vivid_pGC.txt
-odm/etc/PanelChaplin/AD296_P_3_A0020_dsc_cmd_mode_panel_1_100nit.odf
-odm/etc/PanelChaplin/AD296_P_3_A0020_dsc_cmd_mode_panel_1_2nit.odf
-odm/etc/PanelChaplin/AD296_P_3_A0020_dsc_cmd_mode_panel_1_max.odf
-odm/etc/PanelChaplin/AD296_P_3_A0020_dsc_cmd_mode_panel_2_100nit.odf
-odm/etc/PanelChaplin/AD296_P_3_A0020_dsc_cmd_mode_panel_2_2nit.odf
-odm/etc/PanelChaplin/AD296_P_3_A0020_dsc_cmd_mode_panel_2_max.odf
-odm/etc/PanelChaplin/AD296_P_3_A0020_dsc_cmd_mode_panel_Cinema_100nits_pGC.txt
-odm/etc/PanelChaplin/AD296_P_3_A0020_dsc_cmd_mode_panel_Cinema_2nits_pGC.txt
-odm/etc/PanelChaplin/AD296_P_3_A0020_dsc_cmd_mode_panel_Cinema_pGC.txt
-odm/etc/PanelChaplin/AD296_P_3_A0020_dsc_cmd_mode_panel_EP3_100nits_pGC.txt
-odm/etc/PanelChaplin/AD296_P_3_A0020_dsc_cmd_mode_panel_EP3_2nits_pGC.txt
-odm/etc/PanelChaplin/AD296_P_3_A0020_dsc_cmd_mode_panel_EP3_pGC.txt
-odm/etc/PanelChaplin/AD296_P_3_A0020_dsc_cmd_mode_panel_EsRGB_100nits_pGC.txt
-odm/etc/PanelChaplin/AD296_P_3_A0020_dsc_cmd_mode_panel_EsRGB_2nits_pGC.txt
-odm/etc/PanelChaplin/AD296_P_3_A0020_dsc_cmd_mode_panel_EsRGB_pGC.txt
-odm/etc/PanelChaplin/AD296_P_3_A0020_dsc_cmd_mode_panel_HS
-odm/etc/PanelChaplin/AD296_P_3_A0020_dsc_cmd_mode_panel_LsRGB_100nits_pGC.txt
-odm/etc/PanelChaplin/AD296_P_3_A0020_dsc_cmd_mode_panel_LsRGB_2nits_pGC.txt
-odm/etc/PanelChaplin/AD296_P_3_A0020_dsc_cmd_mode_panel_LsRGB_pGC.txt
-odm/etc/PanelChaplin/AD296_P_3_A0020_dsc_cmd_mode_panel_Nature_100nits_pGC.txt
-odm/etc/PanelChaplin/AD296_P_3_A0020_dsc_cmd_mode_panel_Nature_2nits_pGC.txt
-odm/etc/PanelChaplin/AD296_P_3_A0020_dsc_cmd_mode_panel_Nature_pGC.txt
-odm/etc/PanelChaplin/AD296_P_3_A0020_dsc_cmd_mode_panel_Vivid_100nits_pGC.txt
-odm/etc/PanelChaplin/AD296_P_3_A0020_dsc_cmd_mode_panel_Vivid_2nits_pGC.txt
-odm/etc/PanelChaplin/AD296_P_3_A0020_dsc_cmd_mode_panel_Vivid_pGC.txt
-odm/etc/PanelChaplin/AD296_P_3_A0020_dsc_cmd_mode_panel_game_color_enhance_Cinema_100nits_pGC.txt
-odm/etc/PanelChaplin/AD296_P_3_A0020_dsc_cmd_mode_panel_game_color_enhance_Cinema_2nits_pGC.txt
-odm/etc/PanelChaplin/AD296_P_3_A0020_dsc_cmd_mode_panel_game_color_enhance_Cinema_pGC.txt
-odm/etc/PanelChaplin/AD296_P_3_A0020_dsc_cmd_mode_panel_game_color_enhance_EP3_100nits_pGC.txt
-odm/etc/PanelChaplin/AD296_P_3_A0020_dsc_cmd_mode_panel_game_color_enhance_EP3_2nits_pGC.txt
-odm/etc/PanelChaplin/AD296_P_3_A0020_dsc_cmd_mode_panel_game_color_enhance_EP3_pGC.txt
-odm/etc/PanelChaplin/AD296_P_3_A0020_dsc_cmd_mode_panel_game_color_enhance_EsRGB_100nits_pGC.txt
-odm/etc/PanelChaplin/AD296_P_3_A0020_dsc_cmd_mode_panel_game_color_enhance_EsRGB_2nits_pGC.txt
-odm/etc/PanelChaplin/AD296_P_3_A0020_dsc_cmd_mode_panel_game_color_enhance_EsRGB_pGC.txt
-odm/etc/PanelChaplin/AD296_P_3_A0020_dsc_cmd_mode_panel_game_color_enhance_HS
-odm/etc/PanelChaplin/AD296_P_3_A0020_dsc_cmd_mode_panel_game_color_enhance_LsRGB_100nits_pGC.txt
-odm/etc/PanelChaplin/AD296_P_3_A0020_dsc_cmd_mode_panel_game_color_enhance_LsRGB_2nits_pGC.txt
-odm/etc/PanelChaplin/AD296_P_3_A0020_dsc_cmd_mode_panel_game_color_enhance_LsRGB_pGC.txt
-odm/etc/PanelChaplin/AD296_P_3_A0020_dsc_cmd_mode_panel_game_color_enhance_Nature_100nits_pGC.txt
-odm/etc/PanelChaplin/AD296_P_3_A0020_dsc_cmd_mode_panel_game_color_enhance_Nature_2nits_pGC.txt
-odm/etc/PanelChaplin/AD296_P_3_A0020_dsc_cmd_mode_panel_game_color_enhance_Nature_pGC.txt
-odm/etc/PanelChaplin/AD296_P_3_A0020_dsc_cmd_mode_panel_game_color_enhance_Vivid_100nits_pGC.txt
-odm/etc/PanelChaplin/AD296_P_3_A0020_dsc_cmd_mode_panel_game_color_enhance_Vivid_2nits_pGC.txt
-odm/etc/PanelChaplin/AD296_P_3_A0020_dsc_cmd_mode_panel_game_color_enhance_Vivid_pGC.txt
+my_product/vendor/etc/display_apollo_list_AA616_P_7_A0020_dsc_cmd_mode_panel.xml:vendor/etc/display_apollo_list_AA616_P_7_A0020_dsc_cmd_mode_panel.xml
+my_product/vendor/etc/display_dbvgain_config_AA616_P_7_A0020_dsc_cmd_mode_panel.xml:vendor/etc/display_dbvgain_config_AA616_P_7_A0020_dsc_cmd_mode_panel.xml
+my_product/vendor/etc/display_deburnIn_dbvgain_config_AA616_P_7_A0020_dsc_cmd_mode_panel.xml:vendor/etc/display_deburnIn_dbvgain_config_AA616_P_7_A0020_dsc_cmd_mode_panel.xml
+my_product/vendor/etc/display_demura_config_AA616_P_7_A0020_dsc_cmd_mode_panel.xml:vendor/etc/display_demura_config_AA616_P_7_A0020_dsc_cmd_mode_panel.xml
+odm/etc/PanelChaplin/AA616_P_7_A0020_dsc_cmd_mode_panel_1_100nit.odf
+odm/etc/PanelChaplin/AA616_P_7_A0020_dsc_cmd_mode_panel_1_2nit.odf
+odm/etc/PanelChaplin/AA616_P_7_A0020_dsc_cmd_mode_panel_1_max.odf
+odm/etc/PanelChaplin/AA616_P_7_A0020_dsc_cmd_mode_panel_2_100nit.odf
+odm/etc/PanelChaplin/AA616_P_7_A0020_dsc_cmd_mode_panel_2_2nit.odf
+odm/etc/PanelChaplin/AA616_P_7_A0020_dsc_cmd_mode_panel_2_max.odf
+odm/etc/PanelChaplin/AA616_P_7_A0020_dsc_cmd_mode_panel_Cinema_100nits_pGC.txt
+odm/etc/PanelChaplin/AA616_P_7_A0020_dsc_cmd_mode_panel_Cinema_2nits_pGC.txt
+odm/etc/PanelChaplin/AA616_P_7_A0020_dsc_cmd_mode_panel_Cinema_pGC.txt
+odm/etc/PanelChaplin/AA616_P_7_A0020_dsc_cmd_mode_panel_EP3_100nits_pGC.txt
+odm/etc/PanelChaplin/AA616_P_7_A0020_dsc_cmd_mode_panel_EP3_2nits_pGC.txt
+odm/etc/PanelChaplin/AA616_P_7_A0020_dsc_cmd_mode_panel_EP3_pGC.txt
+odm/etc/PanelChaplin/AA616_P_7_A0020_dsc_cmd_mode_panel_EsRGB_100nits_pGC.txt
+odm/etc/PanelChaplin/AA616_P_7_A0020_dsc_cmd_mode_panel_EsRGB_2nits_pGC.txt
+odm/etc/PanelChaplin/AA616_P_7_A0020_dsc_cmd_mode_panel_EsRGB_pGC.txt
+odm/etc/PanelChaplin/AA616_P_7_A0020_dsc_cmd_mode_panel_HS
+odm/etc/PanelChaplin/AA616_P_7_A0020_dsc_cmd_mode_panel_LsRGB_100nits_pGC.txt
+odm/etc/PanelChaplin/AA616_P_7_A0020_dsc_cmd_mode_panel_LsRGB_2nits_pGC.txt
+odm/etc/PanelChaplin/AA616_P_7_A0020_dsc_cmd_mode_panel_LsRGB_pGC.txt
+odm/etc/PanelChaplin/AA616_P_7_A0020_dsc_cmd_mode_panel_Nature_100nits_pGC.txt
+odm/etc/PanelChaplin/AA616_P_7_A0020_dsc_cmd_mode_panel_Nature_2nits_pGC.txt
+odm/etc/PanelChaplin/AA616_P_7_A0020_dsc_cmd_mode_panel_Nature_pGC.txt
+odm/etc/PanelChaplin/AA616_P_7_A0020_dsc_cmd_mode_panel_Vivid_100nits_pGC.txt
+odm/etc/PanelChaplin/AA616_P_7_A0020_dsc_cmd_mode_panel_Vivid_2nits_pGC.txt
+odm/etc/PanelChaplin/AA616_P_7_A0020_dsc_cmd_mode_panel_Vivid_pGC.txt
+odm/etc/PanelChaplin/AA616_P_7_A0020_dsc_cmd_mode_panel_game_color_enhance_Cinema_100nits_pGC.txt
+odm/etc/PanelChaplin/AA616_P_7_A0020_dsc_cmd_mode_panel_game_color_enhance_Cinema_2nits_pGC.txt
+odm/etc/PanelChaplin/AA616_P_7_A0020_dsc_cmd_mode_panel_game_color_enhance_Cinema_pGC.txt
+odm/etc/PanelChaplin/AA616_P_7_A0020_dsc_cmd_mode_panel_game_color_enhance_EP3_100nits_pGC.txt
+odm/etc/PanelChaplin/AA616_P_7_A0020_dsc_cmd_mode_panel_game_color_enhance_EP3_2nits_pGC.txt
+odm/etc/PanelChaplin/AA616_P_7_A0020_dsc_cmd_mode_panel_game_color_enhance_EP3_pGC.txt
+odm/etc/PanelChaplin/AA616_P_7_A0020_dsc_cmd_mode_panel_game_color_enhance_EsRGB_100nits_pGC.txt
+odm/etc/PanelChaplin/AA616_P_7_A0020_dsc_cmd_mode_panel_game_color_enhance_EsRGB_2nits_pGC.txt
+odm/etc/PanelChaplin/AA616_P_7_A0020_dsc_cmd_mode_panel_game_color_enhance_EsRGB_pGC.txt
+odm/etc/PanelChaplin/AA616_P_7_A0020_dsc_cmd_mode_panel_game_color_enhance_HS
+odm/etc/PanelChaplin/AA616_P_7_A0020_dsc_cmd_mode_panel_game_color_enhance_LsRGB_100nits_pGC.txt
+odm/etc/PanelChaplin/AA616_P_7_A0020_dsc_cmd_mode_panel_game_color_enhance_LsRGB_2nits_pGC.txt
+odm/etc/PanelChaplin/AA616_P_7_A0020_dsc_cmd_mode_panel_game_color_enhance_LsRGB_pGC.txt
+odm/etc/PanelChaplin/AA616_P_7_A0020_dsc_cmd_mode_panel_game_color_enhance_Nature_100nits_pGC.txt
+odm/etc/PanelChaplin/AA616_P_7_A0020_dsc_cmd_mode_panel_game_color_enhance_Nature_2nits_pGC.txt
+odm/etc/PanelChaplin/AA616_P_7_A0020_dsc_cmd_mode_panel_game_color_enhance_Nature_pGC.txt
+odm/etc/PanelChaplin/AA616_P_7_A0020_dsc_cmd_mode_panel_game_color_enhance_Vivid_100nits_pGC.txt
+odm/etc/PanelChaplin/AA616_P_7_A0020_dsc_cmd_mode_panel_game_color_enhance_Vivid_2nits_pGC.txt
+odm/etc/PanelChaplin/AA616_P_7_A0020_dsc_cmd_mode_panel_game_color_enhance_Vivid_pGC.txt
 odm/etc/PanelChaplin/AdjustValue
 odm/etc/PanelChaplin/Dark_Eye_Protect_Cinema.txt
 odm/etc/PanelChaplin/Dark_Eye_Protect_EP3.txt
@@ -1637,24 +1597,13 @@ odm/etc/PanelChaplin/Game_OTOME_Fliter.txt
 odm/etc/PanelChaplin/Game_OldMovie_Fliter.txt
 odm/etc/PanelChaplin/Game_RPG.txt
 odm/etc/PanelChaplin/Game_Vivid_Fliter.txt
-odm/etc/PanelChaplin/LUTPublic_colorful_P3_E29.txt
-odm/etc/PanelChaplin/LUTPublic_colorful_sRGB_E29.txt
-odm/etc/PanelChaplin/LUTPublic_natural_P3_E29.txt
-odm/etc/PanelChaplin/LUTPublic_natural_sRGB_E29.txt
-odm/etc/PanelChaplin/LUTPublic_professional_P3_E29.txt
-odm/etc/PanelChaplin/LUTPublic_professional_sRGB_E29.txt
 odm/etc/PanelChaplin/Lut3D_311
 odm/etc/PanelChaplin/Lut3D_312
-odm/etc/PanelChaplin/RGBMatrix_public_P3.txt
-odm/etc/PanelChaplin/RGBMatrix_public_sRGB.txt
 odm/etc/PanelChaplin/panelchaplin
-odm/etc/display/qdcm_calib_data_AA601_P_7_A0020_dsc_cmd_mode_panel.json
-odm/etc/display/qdcm_calib_data_AD296_P_3_A0020_dsc_cmd_mode_panel.json
+odm/etc/display/qdcm_calib_data_AA616_P_7_A0020_dsc_cmd_mode_panel.json
 odm/etc/sdm_display_resolution_extn.xml:vendor/etc/display/sdm_display_resolution_extn.xml;TRYSRCFIRST
-vendor/etc/ltm_config_AA601_P_7_A0020_dsc_cmd_mode_panel.xml
-vendor/etc/ltm_config_AD296_P_3_A0020_dsc_cmd_mode_panel.xml
-vendor/etc/spr_cfg_AA601_P_7_A0020_dsc_cmd_mode_panel.xml
-vendor/etc/spr_cfg_AD296_P_3_A0020_dsc_cmd_mode_panel.xml
+vendor/etc/ltm_config_AA616_P_7_A0020_dsc_cmd_mode_panel.xml
+vendor/etc/spr_cfg_AA616_P_7_A0020_dsc_cmd_mode_panel.xml
 
 # Dolby Vision
 odm/etc/dolby/display/dolby_vision.cfg
@@ -1686,13 +1635,11 @@ vendor/lib64/rfs/dsp/libscveT2T_skel.so
 vendor/lib64/rfs/dsp/libsvDescMatchImpl_dsp_skel.so
 vendor/lib64/rfs/dsp/libsvDescMatch_dsp.so
 vendor/lib64/rfs/dsp/libsvdsp.so
+vendor/lib64/rfs/dsp/libsvswdsp.so
+vendor/lib64/rfs/dsp/libsvswdsp_skel.so
 vendor/lib64/rfs/dsp/libvpp_frc.so
 vendor/lib64/rfs/dsp/libvpp_gfrc_networks.so
 vendor/lib64/rfs/dsp/libvpp_svc_skel.so
-
-# eUICC
-my_product/etc/permissions/EuiccGoogle_grant_permissions_list.xml:product/etc/permissions/privapp-permissions-euiccgoogle.xml
-my_product/priv-app/EuiccGoogle/EuiccGoogle.apk:product/priv-app/EuiccGoogle/EuiccGoogle.apk;PRESIGNED
 
 # EVA firmware
 vendor/firmware/evass.b00
@@ -1765,6 +1712,10 @@ vendor/firmware/gen80900_aqe.fw
 vendor/firmware/gen80900_gmu.bin
 vendor/firmware/gen80900_sqe.fw
 vendor/firmware/gen80900_zap.mbn
+vendor/gpu/kbc/sequence_manifest.bin
+vendor/gpu/kbc/unified_kbcs_32.bin
+vendor/gpu/kbc/unified_kbcs_64.bin
+vendor/gpu/kbc/unified_ksqs.bin
 
 # Horae
 odm/etc/horae/horae_target.conf
@@ -1802,21 +1753,19 @@ odm/lib64/libaiboost_te.so;FIX_SONAME
 odm/lib64/libaiboost_ubwc.so
 
 # NFC
-odm/etc/nfc/libnfc-mtp-SN220.conf_24831:odm/etc/libnfc-mtp-SN220.conf_24831
-odm/etc/nfc/libnfc-mtp-SN220.conf_24863:odm/etc/libnfc-mtp-SN220.conf_24863
-odm/etc/nfc/libnfc-nci.conf_24863:vendor/etc/libnfc-nci.conf
+odm/etc/nfc/libnfc-mtp-SN220.conf_25821:vendor/etc/libnfc-nxp.conf
+odm/etc/nfc/libnfc-nci.conf_25821:vendor/etc/libnfc-nci.conf
 odm/etc/nfc/sn220u.bin_sn220tu_fw_01_01_45:vendor/firmware/sn220u.bin
 
 # Sensors config
-odm/etc/sensor/config/infiniti_qrd_ois_system.json
+odm/etc/sensor/config/fairlady_qrd_ois_system.json
 odm/etc/sensor/config/json_list
 odm/etc/sensor/config/kaanapali_mtp_ak09919.json
 odm/etc/sensor/config/kaanapali_mtp_alsps.json
-odm/etc/sensor/config/kaanapali_mtp_alsps_hw_tcs3760.json
-odm/etc/sensor/config/kaanapali_mtp_bmp5_0.json
+odm/etc/sensor/config/kaanapali_mtp_alsps_hw_sip3625_lron.json
 odm/etc/sensor/config/kaanapali_mtp_cct_rear.json
 odm/etc/sensor/config/kaanapali_mtp_freefall.json
-odm/etc/sensor/config/kaanapali_mtp_lsm6dsv_0.json
+odm/etc/sensor/config/kaanapali_mtp_icm456xx_0.json
 odm/etc/sensor/config/kaanapali_mtp_oplus_lay.json
 odm/etc/sensor/config/kaanapali_mtp_oplus_measurement.json
 odm/etc/sensor/config/kaanapali_mtp_oplus_shaking.json
@@ -1825,8 +1774,6 @@ odm/etc/sensor/config/kaanapali_mtp_oplus_smart_prox.json
 odm/etc/sensor/config/kaanapali_mtp_pocket.json
 odm/etc/sensor/config/lux_aod.json
 odm/etc/sensor/config/oplus_car_motion.json
-odm/etc/sensor/config/oplus_car_scene.json
-odm/etc/sensor/config/oplus_flight_scene.json
 odm/etc/sensor/config/oplus_gyro_cal_0.json
 odm/etc/sensor/config/oplus_mag_fusion_v2.json
 odm/etc/sensor/config/oplus_pedometer_minute.json
@@ -1835,34 +1782,26 @@ odm/etc/sensor/config/oplus_rotv.json
 odm/etc/sensor/sensor_config.json
 
 # Touchscreen firmware
-odm/firmware/tp/infiniti/GloveDetect.tflite
-odm/firmware/tp/infiniti/libafe_s3910.so
-odm/firmware/tp/infiniti/libafepanel_s3910_boe.so
-odm/firmware/tp/infiniti/libafepanel_s3910_tianma.so
-odm/firmware/tp/infiniti/libpostalgo.so
-odm/firmware/tp/infiniti/libpostalgo_symbol.so
-odm/firmware/tp/infiniti/libprealgo.so
-odm/firmware/tp/infiniti/libprealgo_symbol.so
-odm/firmware/tp/infiniti/main_synaptics-s3910_boe_aging_limit.csv
-odm/firmware/tp/infiniti/main_synaptics-s3910_boe_limit.csv
-odm/firmware/tp/infiniti/main_synaptics-s3910_tianma_aging_limit.csv
-odm/firmware/tp/infiniti/main_synaptics-s3910_tianma_limit.csv
-odm/firmware/tp/infiniti/model.tflite
-odm/firmware/tp/infiniti/vnd_algo_config_main.xml
-odm/firmware/tp/infiniti/vnd_algo_config_main_second.xml
-odm/firmware/tp/infiniti/vnd_custom_config_main.xml
-odm/firmware/tp/infiniti/vnd_edge_touch_config_main.xml
-odm/firmware/tp/infiniti/vnd_touch_project_config.xml
-odm/firmware/tp/infiniti/vnd_touch_scene_config_main.xml
-odm/firmware/tp/infiniti/vnd_tp_fw_main.bin
-odm/firmware/tp/infiniti/vnd_tp_fw_main_second.bin
+odm/firmware/tp/fairlady/GloveDetect.tflite
+odm/firmware/tp/fairlady/libafe_s3910.so
+odm/firmware/tp/fairlady/libafepanel_s3910_tianma.so
+odm/firmware/tp/fairlady/libpostalgo.so
+odm/firmware/tp/fairlady/libprealgo.so
+odm/firmware/tp/fairlady/main_synaptics-s3910_tianma_aging_limit.csv
+odm/firmware/tp/fairlady/main_synaptics-s3910_tianma_limit.csv
+odm/firmware/tp/fairlady/model.tflite
+odm/firmware/tp/fairlady/vnd_algo_config_main.xml
+odm/firmware/tp/fairlady/vnd_custom_config_main.xml
+odm/firmware/tp/fairlady/vnd_edge_touch_config_main.xml
+odm/firmware/tp/fairlady/vnd_touch_project_config.xml
+odm/firmware/tp/fairlady/vnd_touch_scene_config_main.xml
+odm/firmware/tp/fairlady/vnd_tp_fw_main.bin
 
 # UFS firmware
-odm/firmware/ufs/SAMSUNG-KLUEG4RHHF-F0G1.bin
-odm/firmware/ufs/SAMSUNG-KLUFG4NHHB-F0G1.bin
-odm/firmware/ufs/SAMSUNG-KLUGG8NHHB-F0G1.bin
+odm/firmware/ufs/SAMSUNG-KLUEG4RHKF-F0H1.bin
+odm/firmware/ufs/SAMSUNG-KLUFG8RHKF-F0H1.bin
 odm/firmware/ufs/SAMSUNG-KLUGG8NHKB-F0H1.bin
-odm/firmware/ufs/SKhynix-HN8T271EJKX152.bin
+odm/firmware/ufs/XBSTOR-XBUSC1B2AA9TF3.bin
 odm/firmware/ufs/move_target_ufs_fw_to_oplusreserve1.sh
 odm/firmware/ufs/ufs_version_config.xml
 
@@ -1879,9 +1818,6 @@ vendor/firmware/vpu40_2v_v1.mbn
 vendor/firmware/vpu40_2v_v1_unsigned.mbn
 
 # WiFi
-odm/etc/wifi/peach/bdwlan.b0a
-odm/etc/wifi/peach/bdwlan.b0e
-odm/etc/wifi/peach/bdwlan.b0i
 odm/etc/wifi/peach/bdwlan.elf
 odm/etc/wifi/peach/regdb.bin
 odm/etc/wifi/peach/regdb_version

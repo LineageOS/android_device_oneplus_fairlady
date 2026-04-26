@@ -36,7 +36,7 @@
     <!-- Default screen brightness setting set.
          -2 is invalid so setting will resort to int value specified above.
          Must be in the range specified by minimum and maximum. -->
-    <item type="dimen" name="config_screenBrightnessSettingDefaultFloat">0.399951</item>
+    <item type="dimen" name="config_screenBrightnessSettingDefaultFloat">0.398730</item>
 
     <!-- Screen brightness used to dim the screen while dozing in a very low power state.
          May be less than the minimum allowed brightness setting
@@ -266,10 +266,10 @@
          @see https://www.w3.org/TR/SVG/paths.html#PathData
          -->
     <string translatable="false" name="config_mainBuiltInDisplayCutout">
-        M 0,83
-        M -41,83
-        A 41,41 0 1,0 41,83
-        A 41,41 0 1,0 -41,83
+        M 0,84
+        M -38,84
+        A 38,38 0 1,0 38,84
+        A 38,38 0 1,0 -38,84
         Z
     </string>
 
@@ -280,10 +280,10 @@
          config_mainBuiltInDisplayCutout
          -->
     <string translatable="false" name="config_mainBuiltInDisplayCutoutRectApproximation">
-        M -39,0
-        L -39,141
-        L 38,141
-        L 39,0
+        M -40,0
+        L -40,135
+        L 40,135
+        L 40,0
         Z
     </string>
 
