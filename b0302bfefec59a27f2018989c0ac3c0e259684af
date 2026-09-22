@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e7e647f8_be222bff",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 30975
+      },
+      "writtenOn": "2026-09-22T11:23:22Z",
+      "side": 1,
+      "message": "sys.oplus.ifaa.model prop needs to be updated to match the value in stock",
+      "revId": "b0302bfefec59a27f2018989c0ac3c0e259684af",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
