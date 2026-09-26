@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a99653d5_03700bc9",
+        "filename": "device.mk",
+        "patchSetId": 4
+      },
+      "lineNbr": 56,
+      "author": {
+        "id": 30975
+      },
+      "writtenOn": "2026-09-26T19:43:15Z",
+      "side": 1,
+      "message": "can we move HTPR_ENABLE_NODE to common tree and keep HTPR_ENABLE_VALUE device specific?",
+      "revId": "562b39d6ce3506691995203a754db2ec33dfded4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
