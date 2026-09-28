@@ -16,6 +16,24 @@
       "message": "is cwb_weightspos.json no longer supplied for 8850?",
       "revId": "680fe9979fd1339c17f085cfd22388a7470ee442",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "72b83761_a9494d2f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2026-09-28T11:22:23Z",
+      "side": 1,
+      "message": "yeah, it\u0027s not present on 15/15R/15T.",
+      "parentUuid": "85c16e62_18dd0ba4",
+      "revId": "680fe9979fd1339c17f085cfd22388a7470ee442",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
