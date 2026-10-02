@@ -17,6 +17,9 @@ TARGET_OTA_ASSERT_DEVICE := OP64DDL1
 # Display
 TARGET_SCREEN_DENSITY := 560
 
+# Kernel
+TARGET_KERNEL_BAZEL_FLAGS += --//vendor/oneplus/sm8850:dtbo_config=//vendor/oneplus/sm8850-devicetrees:fairlady_dtbo_config
+
 # Properties
 TARGET_ODM_PROP += $(DEVICE_PATH)/properties/odm.prop
 TARGET_SYSTEM_EXT_PROP += $(DEVICE_PATH)/properties/system_ext.prop
