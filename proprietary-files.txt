@@ -1801,6 +1801,9 @@ odm/etc/sensor/config/oplus_rotation_detect.json
 odm/etc/sensor/config/oplus_rotv.json
 odm/etc/sensor/sensor_config.json
 
+# Temperature profile
+odm/etc/temperature_profile/sys_thermal_control_config.xml
+
 # Touchscreen firmware
 odm/firmware/tp/fairlady/GloveDetect.tflite
 odm/firmware/tp/fairlady/libafe_s3910.so
