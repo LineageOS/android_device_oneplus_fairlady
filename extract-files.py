@@ -4,7 +4,11 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+import re
+
 from extract_utils.fixups_blob import (
+    BlobFixupCtx,
+    File,
     blob_fixup,
     blob_fixups_user_type,
 )
@@ -15,6 +19,12 @@ from extract_utils.fixups_lib import (
 from extract_utils.main import (
     ExtractUtils,
     ExtractUtilsModule,
+)
+from extract_utils.tools import (
+    llvm_objdump_path,
+)
+from extract_utils.utils import (
+    run_cmd,
 )
 from extract_utils_oplus import (
     add_generated_thermal_engine_config,
@@ -38,6 +48,59 @@ lib_fixups: lib_fixups_user_type = {
         'libhcsutils',
     ): lib_fixup_vendor_suffix,
 }
+
+
+def blob_change_instruction(
+    ctx: BlobFixupCtx,
+    file: File,
+    file_path: str,
+    from_instruction: str,
+    to_instruction: str,
+    disassemble_symbol: str,
+    *args,
+    **kwargs,
+):
+    from_instruction = bytes.fromhex(from_instruction)[::-1].hex()
+
+    segments = [
+        (int(vaddr, 16), int(off, 16), int(filesz, 16))
+        for off, vaddr, filesz in re.findall(
+            r'LOAD off\s+(0x[0-9a-f]+) vaddr (0x[0-9a-f]+).*\n'
+            r'\s+filesz (0x[0-9a-f]+)',
+            run_cmd([llvm_objdump_path, '-p', file_path]),
+        )
+    ]
+
+    for line in run_cmd(
+        [
+            llvm_objdump_path,
+            f'--disassemble-symbols={disassemble_symbol}',
+            file_path,
+        ]
+    ).splitlines():
+        line = line.split(maxsplit=3)
+
+        if len(line) != 4:
+            continue
+
+        offset, instruction, _, _ = line
+
+        if instruction != from_instruction:
+            continue
+
+        offset = int(offset[:-1], 16)
+        offset = next(
+            offset - vaddr + off
+            for vaddr, off, filesz in segments
+            if vaddr <= offset < vaddr + filesz
+        )
+
+        with open(file_path, 'rb+') as f:
+            f.seek(offset)
+            f.write(bytes.fromhex(to_instruction))
+
+        break
+
 
 blob_fixups: blob_fixups_user_type = {
     'odm/etc/camera/CameraHWConfiguration.config': blob_fixup()
@@ -69,7 +132,10 @@ blob_fixups: blob_fixups_user_type = {
     'odm/lib64/liboprec_audrec.so': blob_fixup()
         .replace_needed('libstdc++.so', 'libstdc++_vendor.so'),
     'odm/lib64/soundfx/libOplusSpatializerAidl.so': blob_fixup()
-        .add_needed('libbase.so'),
+        .add_needed('libbase.so')
+        # 48 00 80 52 mov w8, #2
+        # 08 00 80 52 mov w8, #0
+        .call(blob_change_instruction, '48 00 80 52', '08 00 80 52', '_ZN4aidl7android8hardware5audio6effect20OplusSpatializerImplC2Ev'),
     'vendor/etc/libnfc-nci.conf': blob_fixup()
         .regex_replace('NFC_DEBUG_ENABLED=1', 'NFC_DEBUG_ENABLED=0'),
     'vendor/etc/libnfc-nxp.conf': blob_fixup()
