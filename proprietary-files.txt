@@ -1,5 +1,5 @@
 ## All proprietary files from this list, unless pinned and noted otherwise,
-## are from OnePlus 15T (PLZ110_16.0.10.500(CN01)).
+## are from OnePlus 15T (PLZ110_17.0.1.200(CN01)).
 
 # ACDB
 odm/etc/acdbdata/FTM/acdb_cal.acdb
@@ -11,6 +11,7 @@ odm/etc/acdbdata/up_ve_enpuv6_ha.eai
 odm/etc/acdbdata/up_ve_enpuv6_hh.eai
 
 # ADSP modules
+odm/lib/rfsa/adsp/lhdc_enc_v1_0.so
 odm/lib/rfsa/adsp/libCalculator_skel.so
 odm/lib/rfsa/adsp/libQnnHtpV81.so
 odm/lib/rfsa/adsp/libQnnHtpV81Skel.so
@@ -114,6 +115,8 @@ odm/lib64/liboplus_audiox.so
 
 # Camera
 odm/bin/hw/vendor.oplus.hardware.cammidasservice-V1-service
+odm/etc/AIMotion/q_384_192_l1_p0_t0_genshin.bin
+odm/etc/AIMotion/q_384_192_l2_p0_t0_genshin.bin
 odm/etc/camera/AIAE_Models/AIAEVideoModelMain.bin
 odm/etc/camera/AIAE_Models/AIAEVideoModelTele.bin
 odm/etc/camera/AIAE_Models/AIAEVideoModelTeleDownSample.bin
@@ -245,7 +248,6 @@ odm/etc/camera/basictone/vig/VigTab_Main
 odm/etc/camera/basictone/vig/VigTab_Tele
 odm/etc/camera/basictone/vig/VigTab_UTele
 odm/etc/camera/basictone/vig/VigTab_Wide
-odm/etc/camera/cfr_bin/CFR_OPlus_EF017_UW_snapshot.bin
 odm/etc/camera/cfr_bin/CFR_fairladyExmain.bin
 odm/etc/camera/cfr_bin/CFR_fairladyExtele.bin
 odm/etc/camera/cfr_bin/CFR_fairladymain.bin
@@ -654,6 +656,7 @@ odm/etc/camera/livephoto_coverenhancer/libs/libzlib.so;MODULE_SUFFIX=.livephoto
 odm/etc/camera/livephoto_coverenhancer/models/RRDBNet_sm8850.bin
 odm/etc/camera/meishe_lut/800t_blues.bin
 odm/etc/camera/meishe_lut/800t_hdr.bin
+odm/etc/camera/meishe_lut/800t_master.bin
 odm/etc/camera/meishe_lut/800t_sdr.bin
 odm/etc/camera/meishe_lut/ByYo3If
 odm/etc/camera/meishe_lut/Cold.cube.rgb.bin
@@ -700,9 +703,12 @@ odm/etc/camera/meishe_lut/fuji-cc-high.bin
 odm/etc/camera/meishe_lut/fuji-cc-low.bin
 odm/etc/camera/meishe_lut/fuji-eterna-v2.cube.rgb.bin
 odm/etc/camera/meishe_lut/fuji-nc.bin
+odm/etc/camera/meishe_lut/fuji-nc_master.bin
 odm/etc/camera/meishe_lut/fuji-proNegHi.bin
+odm/etc/camera/meishe_lut/fuji-proNegHi_master.bin
 odm/etc/camera/meishe_lut/fuji.cube.rgb.bin
 odm/etc/camera/meishe_lut/fuji_cc.bin
+odm/etc/camera/meishe_lut/fuji_cc_master.bin
 odm/etc/camera/meishe_lut/gourmet.cube.rgb.bin
 odm/etc/camera/meishe_lut/gr.bw.rgba.bin
 odm/etc/camera/meishe_lut/gr.hi.bw.rgba.bin
@@ -722,6 +728,7 @@ odm/etc/camera/meishe_lut/gt-mountainous.cube.rgb.bin
 odm/etc/camera/meishe_lut/gt-old-times.cube.rgb.bin
 odm/etc/camera/meishe_lut/gt-quietly-ele.cube.rgb.bin
 odm/etc/camera/meishe_lut/gt-steaming.cube.rgb.bin
+odm/etc/camera/meishe_lut/hu_po.bin
 odm/etc/camera/meishe_lut/interstellar_space.bin
 odm/etc/camera/meishe_lut/island.cube.rgb.bin
 odm/etc/camera/meishe_lut/jw_sun.CUBE.rgb.bin
@@ -750,6 +757,15 @@ odm/etc/camera/meishe_lut/portra400_master.bin
 odm/etc/camera/meishe_lut/portra400_normal.bin
 odm/etc/camera/meishe_lut/portra400_sdr_gen_a_1.bin
 odm/etc/camera/meishe_lut/portra400_sdr_gen_d_1.bin
+odm/etc/camera/meishe_lut/positive_hdr_master_a_1.bin
+odm/etc/camera/meishe_lut/positive_hdr_master_d_1.bin
+odm/etc/camera/meishe_lut/positive_hdr_normal_a_1.bin
+odm/etc/camera/meishe_lut/positive_hdr_normal_d_1.bin
+odm/etc/camera/meishe_lut/positive_master.bin
+odm/etc/camera/meishe_lut/positive_normal.bin
+odm/etc/camera/meishe_lut/positive_sdr_gen_a_1.bin
+odm/etc/camera/meishe_lut/positive_sdr_gen_d_1.bin
+odm/etc/camera/meishe_lut/qing_tou.bin
 odm/etc/camera/meishe_lut/rJ5g5vPWG
 odm/etc/camera/meishe_lut/red-red.cube.rgb.bin
 odm/etc/camera/meishe_lut/sky-blue.cube.rgb.bin
@@ -801,17 +817,22 @@ odm/etc/camera/OplusSingleDefault.xml
 odm/etc/camera/Vega_Align_occlusion.model
 odm/etc/camera/Vega_Align_occlusion_snap.model
 odm/etc/camera/Vega_Attribute_Face_RGB.model
+odm/etc/camera/Vega_Detect_AllAnimalBodyFaceEye_Gray.model
 odm/etc/camera/Vega_Detect_AnimalBodyFaceEye_Gray.model
 odm/etc/camera/Vega_Detect_BodyHead_Gray.model
 odm/etc/camera/Vega_Detect_CommonFace_BGR.model
 odm/etc/camera/Vega_Detect_CommonFace_BGR_PZ.model
+odm/etc/camera/Vega_Detect_Head_BGR.model
 odm/etc/camera/Vega_Front_Align_occlusion.model
+odm/etc/camera/Vega_Refine_Head.model
+odm/etc/camera/Vega_Refine_RectQuality_AllAnimalBodyFaceEye_BGR.model
 odm/etc/camera/Vega_Refine_RectQuality_AnimalBodyFaceEye.model
 odm/etc/camera/Vega_Refine_RectQuality_AnimalBodyFaceEye_BGR.model
 odm/etc/camera/Vega_Refine_RectQuality_HumanBodyFaceEye_Gray.model
 odm/etc/camera/Vega_Track_AnimalsBodyFaceEye_Gray.model
 odm/etc/camera/Vega_Track_FaceRect20cls.model
 odm/etc/camera/Vega_Track_FaceRect20cls_snap.model
+odm/etc/camera/Vega_Track_Head_Gray.model
 odm/etc/camera/Vega_Track_HumanBody_Gray.model
 odm/etc/camera/aiboost_qnn_htp2.7.2_16382673562495086299.bin
 odm/etc/camera/aiboost_qnn_htp2.7.2_828413902960689361.bin
@@ -863,6 +884,14 @@ odm/etc/camera/video_MLFT_Post_Main.json
 odm/etc/camera/video_MLFT_Post_Tele.json
 odm/etc/camera/video_MLFT_Post_Ultra_Tele.json
 odm/etc/camera/video_MLFT_Post_Wide.json
+odm/etc/camera/video_dehaze.json
+odm/etc/camera/video_facelut_aiccm_main.json
+odm/etc/camera/video_facelut_aiccm_tele.json
+odm/etc/camera/video_facelut_aiccm_wide.json
+odm/etc/camera/video_facelut_main.json
+odm/etc/camera/video_facelut_tele.json
+odm/etc/camera/video_facelut_ultra_tele.json
+odm/etc/camera/video_facelut_wide.json
 odm/etc/camera/wide_inv_padding_mapxy_33x25.bin
 odm/etc/camera/wide_padding_mapxy_33x25.bin
 odm/etc/init/init.camera_debug_ui.rc
@@ -880,6 +909,7 @@ odm/lib64/camera/components/com.oplus.node.sstabdefer.so
 odm/lib64/camera/components/com.oplus.node.sstabphoto.so
 odm/lib64/camera/components/com.oplus.node.sstabrealt.so
 odm/lib64/camera/components/com.oplus.node.videoainr.so
+odm/lib64/camera/components/com.oplus.node.videodehaze.so
 odm/lib64/camera/components/com.oplus.node.videomlft.so
 odm/lib64/camera/components/com.oplus.stats.aec.so
 odm/lib64/camera/components/com.oplus.stats.af.so
@@ -988,6 +1018,7 @@ odm/lib64/camera.oemlayer.healthmonitor.so
 odm/lib64/camera.oemlayer.logger.so
 odm/lib64/camera.oemlayer.uilayer.so
 odm/lib64/com.oplus.mcx.linearmapper.so
+odm/lib64/com.oplus.node.previewdefognode.so
 odm/lib64/lib2DSlender.so
 odm/lib64/libAECParamParser.so
 odm/lib64/libAF.so
@@ -1016,6 +1047,7 @@ odm/lib64/libHIS.so
 odm/lib64/libImageWarpMask.so;FIX_SONAME
 odm/lib64/libImplicitWatermark.so
 odm/lib64/libMNN.so
+odm/lib64/libMetaSDK.so
 odm/lib64/libNamaWrapper.so
 odm/lib64/libODNN.so
 odm/lib64/libOPAlgoCamAIBeautyBodyDetection.so
@@ -1033,12 +1065,15 @@ odm/lib64/libOPAlgoCamSinglePortrait.so
 odm/lib64/libOPLUSMotionDetection.so
 odm/lib64/libOplusPDCore.so
 odm/lib64/libOpo_awb.so
+odm/lib64/libPDParamParser.so
 odm/lib64/libRedeyeReduce.so
 odm/lib64/libSchedAssistExtImpl_vendor.so
 odm/lib64/libSpecRecon.so
 odm/lib64/libSuperRaw.so
 odm/lib64/libUpScale.so
 odm/lib64/libVideoAIProc.so
+odm/lib64/libVideoDehaze.so
+odm/lib64/libVideoFaceLUT.so
 odm/lib64/libVideoMLFT.so
 odm/lib64/libWaterMark.so
 odm/lib64/lib_geofencing.so
@@ -1087,6 +1122,7 @@ odm/lib64/libcam.odnn.interface.so
 odm/lib64/libcam.oplus.3a.v4.so
 odm/lib64/libcreateFDCLitecachebin.so
 odm/lib64/libcreateFDCcachebin.so
+odm/lib64/libcreateRSPcachebin.so
 odm/lib64/libcreatebin.so
 odm/lib64/libcreatebinForBaseretouch.so
 odm/lib64/libcreatebinForFaceretouch.so
@@ -1109,6 +1145,7 @@ odm/lib64/libmpbase.so
 odm/lib64/libmsnativefilter.so
 odm/lib64/libmvgcommon.so
 odm/lib64/libmvgfusion.so
+odm/lib64/libocam_hmbird.so
 odm/lib64/libocce3a.so
 odm/lib64/libocompression.so
 odm/lib64/libomp.so
@@ -1130,6 +1167,7 @@ odm/lib64/libssd_det.so
 odm/lib64/libtensorflowlite_oplus.so
 odm/lib64/libtrace.so
 odm/lib64/libvega_common.so
+odm/lib64/libviltesr_ubwc.so
 odm/lib64/libwatermark_photo.so
 odm/lib64/libwechatsr_ubwc.so
 odm/lib64/libwrapper_te.so
@@ -1302,7 +1340,6 @@ vendor/lib64/camera/com.qti.sensormodule.qtech_imx766_lpai_ois.bin
 vendor/lib64/camera/com.qti.sensormodule.qtech_imx766_ois.bin
 vendor/lib64/camera/com.qti.sensormodule.qtech_imx858.bin
 vendor/lib64/camera/com.qti.sensormodule.qtech_s5kjn5.bin
-vendor/lib64/camera/com.qti.sensormodule.qtech_s5kjn5_sm8845.bin
 vendor/lib64/camera/com.qti.sensormodule.qti_tpg0.bin
 vendor/lib64/camera/com.qti.sensormodule.qti_tpg1.bin
 vendor/lib64/camera/com.qti.sensormodule.qti_tpg2.bin
@@ -1339,7 +1376,12 @@ vendor/lib64/camera/lafafront_4.pb
 vendor/lib64/camera/lighthousefront_1.pb
 vendor/lib64/camera/macanExFront_4.pb
 vendor/lib64/camera/macanFront_4.pb
+vendor/lib64/camera/mariofront_3.pb
 vendor/lib64/camera/qfdserviceconfig.bin
+vendor/lib64/camera/redalertfront_3.pb
+vendor/lib64/camera/starcraftExFront_4.pb
+vendor/lib64/camera/starcraftFront_4.pb
+vendor/lib64/camera/starcraftrfront_4.pb
 vendor/lib64/camera/swangoosefrontmain_3.pb
 vendor/lib64/camera/swangoosefrontsub_4.pb
 vendor/lib64/camera/u9bfront_4.pb
@@ -1441,6 +1483,7 @@ vendor/lib64/libchinodehmeutils.so
 vendor/lib64/libcolor-default.so
 vendor/lib64/libcom.qti.chinodeutils.so
 vendor/lib64/libdepthcomputation.so
+vendor/lib64/libdscaalgo.so
 vendor/lib64/libeepromcutter.so
 vendor/lib64/libhcsutils.so;MODULE_SUFFIX=_vendor
 vendor/lib64/libhdr10plus.so
@@ -1628,6 +1671,7 @@ odm/etc/PanelChaplin/Lut3D_312
 odm/etc/PanelChaplin/panelchaplin
 odm/etc/display/qdcm_calib_data_AA616_P_7_A0020_dsc_cmd_mode_panel.json
 odm/etc/sdm_display_resolution_extn.xml:vendor/etc/display/sdm_display_resolution_extn.xml;TRYSRCFIRST
+odm/etc/static_lut_bt2020_to_sRGB_mm.cube
 vendor/etc/ltm_config_AA616_P_7_A0020_dsc_cmd_mode_panel.xml
 vendor/etc/spr_cfg_AA616_P_7_A0020_dsc_cmd_mode_panel.xml
 
@@ -1772,12 +1816,14 @@ odm/lib64/AIMotion/libQnnHtpV81Stub.so;MODULE_SUFFIX=.AIMotion
 odm/lib64/AIMotion/libQnnSystem.so;MODULE_SUFFIX=.AIMotion
 odm/lib64/aiframe/cdsp/signed/libQnnHtpV81Skel.so;MODULE_SUFFIX=.signed.aiframe
 odm/lib64/aiframe/cdsp/signed/libaiboostubwc_skel.so
+odm/lib64/aiframe/cdsp/signed/libviltesrubwc_skel.so
 odm/lib64/aiframe/cdsp/signed/libwechatsrubwc_skel.so
 odm/lib64/aiframe/cdsp/unsigned/libQnnHtpV81Skel.so;MODULE_SUFFIX=.unsigned.aiframe
 odm/lib64/aiframe/libQnnHtp.so;MODULE_SUFFIX=.aiframe
 odm/lib64/aiframe/libQnnHtpPrepare.so;MODULE_SUFFIX=.aiframe
 odm/lib64/aiframe/libQnnHtpV81Stub.so;MODULE_SUFFIX=.aiframe
 odm/lib64/aiframe/libQnnSystem.so;MODULE_SUFFIX=.aiframe
+odm/lib64/aiframe/libaiboost_litert.so
 odm/lib64/aiframe/libaiboost_qnn_external_delegate.so;MODULE_SUFFIX=.aiframe;FIX_SONAME
 odm/lib64/aiframe/libqcom_llm.so
 odm/lib64/aiframe/libtransformer_lite.so
@@ -1796,6 +1842,8 @@ odm/lib64/libaiboost_qnn_sr.so
 odm/lib64/libaiboost_sr.so
 odm/lib64/libaiboost_te.so;FIX_SONAME
 odm/lib64/libaiboost_ubwc.so
+odm/lib64/libaiboost_vilte_qnn_sr.so
+odm/lib64/libaiboost_vilte_sr.so
 
 # NFC
 odm/etc/nfc/libnfc-mtp-SN220.conf_25821:vendor/etc/libnfc-nxp.conf
