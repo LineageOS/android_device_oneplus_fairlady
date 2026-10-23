@@ -72,6 +72,7 @@ blob_fixups: blob_fixups_user_type = {
         .add_needed('libbase.so')
         .patch_file('blob-patches/libOplusSpatializerAidl.py'),
     (
+        'odm/lib64/hw/camera.oemlayer.v2.so',
         'odm/lib64/camera.oemlayer.healthmonitor.so',
         'odm/lib64/camera.oemlayer.logger.so',
         'odm/lib64/camera.oemlayer.uilayer.so',
