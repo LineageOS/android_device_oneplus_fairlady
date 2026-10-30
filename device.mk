@@ -51,6 +51,9 @@ $(call soong_config_set_bool,recovery,target_recovery_uses_qti_drm,true)
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
+# Telephony
+$(call soong_config_set_bool,oplus_esim_switcher,subsys_radio_compat,true)
+
 # Touch features
 $(call soong_config_set_bool,OPLUS_LINEAGE_TOUCH_HAL,ENABLE_GM,true)
 $(call soong_config_set,OPLUS_LINEAGE_TOUCH_HAL,HTPR_ENABLE_VALUE,14)
