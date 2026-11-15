@@ -21,6 +21,9 @@ TARGET_SCREEN_WIDTH := 1216
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/display/displayconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630946860609507731.xml
 
+PRODUCT_PACKAGES += \
+    init.oplus.fairlady.rc
+
 # Keymint
 PRODUCT_PACKAGES += \
     android.hardware.security.keymint3-service.strongbox.nxp \
