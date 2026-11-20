@@ -46,17 +46,7 @@ blob_fixups: blob_fixups_user_type = {
         .regex_replace(r'(fdSupport += )TRUE;', r'\1FALSE;'),
     'odm/etc/init/init.camera_process.rc': blob_fixup()
         .regex_replace('    delete_recursion', '    #delete_recursion'),
-    (
-        'odm/lib64/libAlgoProcess.so',
-        'odm/lib64/libEIS.so',
-        'odm/lib64/libEISLive.so',
-        'odm/lib64/libFaceBeautyJni.so',
-        'odm/lib64/libFaceDistortionCorrection.so',
-        'odm/lib64/libOPAlgoCamAiBeautyFaceRetouchCn.so',
-        'odm/lib64/libOPAlgoCamAiUnifySkin.so',
-        'odm/lib64/libOPAlgoCamFaceBeautyCap.so',
-        'odm/lib64/libaiboost_te.so',
-    ): blob_fixup()
+    'odm/lib64/libEIS.so': blob_fixup()
         .clear_symbol_version('AHardwareBuffer_acquire')
         .clear_symbol_version('AHardwareBuffer_allocate')
         .clear_symbol_version('AHardwareBuffer_describe')
@@ -64,8 +54,6 @@ blob_fixups: blob_fixups_user_type = {
         .clear_symbol_version('AHardwareBuffer_lockPlanes')
         .clear_symbol_version('AHardwareBuffer_release')
         .clear_symbol_version('AHardwareBuffer_unlock'),
-    'odm/lib64/libAlgoProcess.so': blob_fixup()
-        .replace_needed('android.hardware.graphics.common-V5-ndk.so', 'android.hardware.graphics.common-V7-ndk.so'),
     'odm/lib64/liboprec_audrec.so': blob_fixup()
         .replace_needed('libstdc++.so', 'libstdc++_vendor.so'),
     'odm/lib64/soundfx/libOplusSpatializerAidl.so': blob_fixup()
